@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>latihan makrup</title>
+        <link rel="stylesheet" href="style1.css"/>
+    </head>
+    <body>
+        <div id="wrapper">
+            <div id="header">
+                <img src="stargal.png" alt="logo"/>
+                <ul id="menu-utama">
+                    <li><a href="">home</a></li>
+                    <li><a href="">tutorial</a></li>
+                    <li><a href="">vidio</a></li>
+                </ul>
+                <form>
+                    <input type="text" name="search"/>
+                </form>
+            </div><!--penutup div "header"-->
+            <div id="slideshow">
+    <img id="foto" src="raden saleh.png">
+</div>
+            <div id="daftar-artikel">
+                <div class="artikel">
+                    <img src="raden saleh.png"
+                    alt="gambar artikel"/>
+                    <h1>PENANGKAPAN PANGERAN DIPONEGORO</h1>
+                    <b>Raden Saleh Syarif Bustaman</b><b> Dibuat pada :- - 1857</b>
+                    <p>Pagi itu di Magelang, suasana terasa menyesakkan. Pangeran Diponegoro 
+                        datang dengan niat tulus untuk berunding demi perdamaian setelah lima tahun perang 
+                        yang melelahkan. Namun, kehormatan sang pangeran dikhianati; perundingan itu hanyalah 
+                        jebakan. </p>
+                        <a href="">lihat</a>
+                </div><!--penutup div "artikel"-->
+                <div class="artikel">
+                    <img src="sun flowers.png"
+                    alt="gambar artikel"/>
+                    <h1>SUN FLOWERS</h1>
+                    <b>Vincent Van Gogh</b><b> Dibuat pada :20 Agustus 1888</b>
+                    <p>Sunflowers dengan penuh semangat selama satu minggu yang sangat produktif.
+                         Di dalam "Rumah Kuning" miliknya, ia bekerja cepat menangkap cahaya
+                          sebelum kelopak bunga-bunga itu layu, menyapukan warna kuning cerah yang tebal 
+                          untuk menyambut kedatangan sahabatnya, Paul Gauguin.</p>
+                        <a href="">lihat</a>
+                </div><!--penutup div "artikel"-->
+                <div class="artikel">
+                    <img src="tsunami.png"
+                    alt="gambar artikel"/>
+                    <h1>TSUNAMI</h1>
+                    <b>Kahsushika Hokusai</b><b> Dibuat pada - - 1831</b>
+                    <p>Di bawah langit pagi yang kelabu, sebuah gelombang raksasa melengkung
+                         dengan angkuh, seolah-olah ingin mencengkeram cakrawala dengan ujung buihnya yang
+                          menyerupai cakar putih yang ganas. Di tengah amukan laut yang mencekam, tiga perahu nelayan tampak mungil
+                           dan tak berdaya, terombang-ambing di antara kekuatan alam yang tak terkendali. </p>
+                        <a href="">lihat</a>
+                </div><!--penutup div "artikel"-->
+            </div><!--penutup div "daftar-artikel"-->
+
+            <div id="sidebar">
+                <h2>Think of art?</h2>
+                <p>tarian warna dan garis di atas kanvas sunyi,
+                     di mana jiwa menumpahkan emosi yang tak terucap
+                      menjadi visual yang hidup. Ia adalah cermin batin,
+                       mengubah pigmen menjadi puisi visual sebuah perpaduan 
+                       antara ilusi dan realitas yang mengabadikan momen, rasa, 
+                       serta misteri kehidupan dalam keindahan yang diam. </p>
+                    <h2>artikel berdasarkan kategori</h2>
+                    <ul>
+                        <li><a href="">html dan css</a></li>
+                        <li><a href="">javascript</a></li>
+                        <li><a href="">Raden Saleh</a></li>
+                        <li><a href="">Pablo picasso</a></li>
+                        <li><a href="">Vincent Van Gogh</a></li>
+                        <li><a href="">Kahsushika Hokusai</a></li>
+                    </ul>
+            </div><!--penutup div "sidebar"-->
+            <div id="footer">
+                <p>Stellart:Where Masterpieces Shine </p>
+            </div>
+        </div><!--penutup div "wrapper"-->
+        <script>
+let gambar = [
+    "raden saleh.png",
+    "sun flowers.png",
+    "tsunami.png",
+];
+
+let index = 0;
+
+setInterval(function() {
+    index++;
+    if (index >= gambar.length) index = 0;
+    document.getElementById("foto").src = gambar[index];
+}, 3000);
+</script>
+    </body>
+</html>

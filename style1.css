@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #5C4F4A;
+}
+
+#wrapper {
+    width: 1000px;
+    margin: 20px auto;
+    background: #EDE9E6;
+}
+
+#header {
+    background: #EDE9E6;
+    padding: 15px;
+}
+
+#header img {
+    width: 120px;
+}
+
+#menu-utama {
+    list-style: none;
+}
+#menu-utama li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+#menu-utama li a {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#menu-utama li a:hover {
+    color: #5C766D;
+}
+
+#header form input {
+    padding: 5px;
+    border: none;
+    border-radius: 3px;
+}
+#header form{
+    float: right;
+    margin-top: -40px;
+}
+
+#daftar-artikel {
+    width: 65%;
+    float: left;
+    padding: 20px;
+}
+
+.artikel {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 15px;
+    overflow: hidden;
+}
+
+.artikel img {
+    width: 200px;
+    float: left;
+    margin-right: 15px;
+}
+
+.artikel h1 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.artikel b {
+    font-size: 12px;
+    color: #5C766D;
+}
+
+.artikel p {
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+.artikel a {
+    display: inline-block;
+    padding: 7px 10px;
+    background: #5C766D;
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    float: right;
+    margin-top: 10px;
+}
+
+.artikel a:hover {
+    background: #555;
+}
+
+#sidebar {
+    width: 35%;
+    float: right;
+    padding: 20px;
+    background: #5C766D;
+    color: white;
+}
+
+#sidebar h2 {
+    margin-bottom: 10px;
+}
+
+#sidebar p {
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+#sidebar ul {
+    list-style: none;
+}
+
+#sidebar ul li {
+    margin-bottom: 8px;
+}
+
+#sidebar ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+#sidebar ul li a:hover {
+    color: #fff;
+}
+
+#footer {
+    clear: both;
+    background: #5C766D;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    font-size: 12px;
+}
+.slider input {
+    display: none;
+}
+#slideshow {
+    width: 100%;
+    height: 400px;
+}
+#slideshow img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
